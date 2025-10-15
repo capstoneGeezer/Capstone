@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "423725829257",
+    "project_id": "alon-54a37",
+    "storage_bucket": "alon-54a37.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:423725829257:android:062713006aa16dd5cb0a58",
+        "android_client_info": {
+          "package_name": "com.example.x1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcg-IHVn9RYCTxFH38YYEj3Q3qc7XVAI4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

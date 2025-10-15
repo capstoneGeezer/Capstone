@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE6C6">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="7dp"
+        android:id="@+id/btnSettings"
+        android:clickable="true"
+        android:src="@drawable/settingsbutton" />
+
+    <LinearLayout
+        android:id="@+id/centerButtons"
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/logo" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/menu_description" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="290dp"
+            android:layout_height="85dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/playbuttoncorner"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/title_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/orelega_one"
+                android:gravity="center"
+                android:text="Play"
+                android:textColor="#FFFFFF"
+                android:textSize="37sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/subtitle_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/orelega_one"
+                android:gravity="center"
+                android:text="Step by Step Lessons"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="250dp"
+            android:layout_height="82dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/multiplayerbuttoncorner"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/title_multiplayer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/orelega_one"
+                android:gravity="center"
+                android:text="Multiplayer"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/practicebuttoncorner"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/title_practice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/orelega_one"
+                android:gravity="center"
+                android:text="Practice"
+                android:textColor="#FFFFFF"
+                android:textSize="29sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomMenu"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/navigationbarcorner"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <ImageButton
+            android:id="@+id/navAchievements"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Achievements"
+            android:scaleType="fitXY"
+            android:scaleX=".75"
+            android:scaleY=".75"
+            android:src="@drawable/achievement_icon" />
+
+        <ImageButton
+            android:id="@+id/navFriends"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Friends"
+            android:scaleType="fitXY"
+            android:scaleX=".75"
+            android:scaleY=".75"
+            android:src="@drawable/friends_icon" />
+
+        <ImageButton
+            android:id="@+id/navUserProfile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="User Profile"
+            android:scaleType="fitXY"
+            android:scaleX=".75"
+            android:scaleY=".75"
+            android:src="@drawable/user_profile_icon" />
+
+        <ImageButton
+            android:id="@+id/navDictionary"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Dictionary"
+            android:scaleType="fitXY"
+            android:scaleX=".75"
+            android:scaleY=".75"
+            android:src="@drawable/dictionary_icon" />
+
+        <ImageButton
+            android:id="@+id/navQuit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Quit"
+            android:scaleType="fitXY"
+            android:scaleX=".75"
+            android:scaleY=".75"
+            android:src="@drawable/quit_icon" />
+    </LinearLayout>
+</RelativeLayout>

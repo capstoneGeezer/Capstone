@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE6C6">
+
+
+    <TextView
+        android:id="@+id/tvTrainingTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/itim"
+        android:text="Create Account"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="7dp"
+        android:src="@drawable/settingsbutton" />
+
+    <LinearLayout
+        android:id="@+id/centerButtons"
+        android:layout_width="match_parent"
+        android:layout_height="780dp"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="182dp"
+            android:layout_height="179dp"
+            android:layout_marginTop="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/createaccountimagegirl"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#B85555"
+            android:fontFamily="@font/holtwood_one_sc"
+            android:text="+ UPLOAD"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            app:cornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgProfile" />
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="48dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/roundtxtbox"
+            android:backgroundTint="#FFC46B"
+            android:fontFamily="@font/itim"
+            android:hint="Username"
+            android:autofillHints="username"
+            android:padding="10dp"
+            android:textColorHint="#8B5E3C"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnUpload" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="48dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/roundtxtbox"
+            android:backgroundTint="#FFC46B"
+            android:fontFamily="@font/itim"
+            android:hint="Email"
+            android:autofillHints="emailAddress"
+            android:padding="10dp"
+            android:textColorHint="#8B5E3C"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etUsername" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="48dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/roundtxtbox"
+            android:backgroundTint="#FFC46B"
+            android:fontFamily="@font/itim"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:autofillHints="password"
+            android:padding="10dp"
+            android:textColorHint="#8B5E3C"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etEmail" />
+
+        <EditText
+            android:id="@+id/etRePassword"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="48dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/roundtxtbox"
+            android:backgroundTint="#FFC46B"
+            android:fontFamily="@font/itim"
+            android:hint="Re-enter Password"
+            android:inputType="textPassword"
+            android:autofillHints="password"
+            android:padding="10dp"
+            android:textColorHint="#8B5E3C"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etPassword" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/btnRegister"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/registerbuttoncorner"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/orelega_one"
+                android:gravity="center"
+                android:text="Register"
+                android:textColor="#FFFFFF"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/backLogin"
+            android:layout_width="wrap_content"
+            android:clickable="true"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/itim"
+            android:text="Go back to sign in"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</RelativeLayout>

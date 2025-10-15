@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE6C6"
+    tools:context=".easylessonlist">
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#FDE8C4">
+
+        <ImageButton
+            android:id="@+id/btnReturn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Return"
+            android:scaleType="centerInside"
+            android:src="@drawable/return_button" />
+
+        <TextView
+            android:id="@+id/Lessons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/itim"
+            android:text="Lessons"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="7dp"
+            android:src="@drawable/settingsbutton" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lessonsContainer"
+        android:layout_width="match_parent"
+        android:layout_below="@id/topBar"
+        android:layout_height="650dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:orientation="vertical"
+        android:background="@drawable/lessonscontainer"
+        android:padding="16dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:scrollbarSize="10dp"
+            android:scrollbarTrackVertical="@drawable/trackscrollbarlessons"
+            android:scrollbarThumbVertical="@drawable/thumbscrollbarlessons"
+            android:fadeScrollbars="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:dividerHeight="8dp"
+                android:paddingEnd="10dp">
+
+            <LinearLayout
+                android:id="@+id/btnlesson1"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/easylessonsbuttoncorner"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+            </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btnlesson2"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/easylessonsbuttoncorner"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btnlesson3"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/easylessonsbuttoncorner"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btnlesson4"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/easylessonsbuttoncorner"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bottomMenu"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/navigationbarcorner"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <ImageButton
+            android:id="@+id/navHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Home"
+            android:scaleType="fitXY"
+            android:scaleX=".75"
+            android:scaleY=".75"
+            android:src="@drawable/achievement_icon" />
+
+        <ImageButton
+            android:id="@+id/navFriends"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Friends"
+            android:scaleType="fitXY"
+            android:scaleX=".75"
+            android:scaleY=".75"
+            android:src="@drawable/friends_icon" />
+
+        <ImageButton
+            android:id="@+id/navLessons"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="User Profile"
+            android:scaleType="fitXY"
+            android:scaleX=".75"
+            android:scaleY=".75"
+            android:src="@drawable/user_profile_icon" />
+
+        <ImageButton
+            android:id="@+id/navMultiplayer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Dictionary"
+            android:scaleType="fitXY"
+            android:scaleX=".75"
+            android:scaleY=".75"
+            android:src="@drawable/dictionary_icon" />
+
+        <ImageButton
+            android:id="@+id/navSettings"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Quit"
+            android:scaleType="fitXY"
+            android:scaleX=".75"
+            android:scaleY=".75"
+            android:src="@drawable/quit_icon" />
+    </LinearLayout>
+
+</RelativeLayout>

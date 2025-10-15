@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE6C6"
+    tools:context=".lessonsdifficulty">
+
+
+    <TextView
+        android:id="@+id/LessonsDifficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:fontFamily="@font/itim"
+        android:text="Choose Difficulty"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <ImageButton
+        android:id="@+id/btnReturn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Return"
+        android:scaleType="centerInside"
+        android:src="@drawable/return_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/btnSettings"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Settings"
+        android:scaleType="centerInside"
+        android:src="@drawable/settingsbutton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="5dp" />
+
+    <LinearLayout
+        android:id="@+id/btnEasy"
+        android:layout_width="370dp"
+        android:layout_height="130dp"
+        android:background="@drawable/easybutton"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="120dp" >
+
+        <ImageView
+            android:layout_width="290dp"
+            android:layout_height="75dp"
+            android:scaleType="fitXY"
+            android:scaleX=".75"
+            android:scaleY=".75"
+            android:src="@drawable/easybuttontext">
+
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnMedium"
+        android:layout_width="370dp"
+        android:layout_height="130dp"
+        android:background="@drawable/mediumbutton"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="320dp" >
+
+        <ImageView
+            android:layout_width="325dp"
+            android:layout_height="75dp"
+            android:scaleType="fitXY"
+            android:scaleX=".75"
+            android:scaleY=".75"
+            app:srcCompat="@drawable/mediumbuttontext">
+
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnHard"
+        android:layout_width="370dp"
+        android:layout_height="130dp"
+        android:background="@drawable/hardbutton"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="520dp" >
+
+        <ImageView
+            android:layout_width="275dp"
+            android:layout_height="75dp"
+            android:scaleType="fitXY"
+            android:scaleX=".75"
+            android:scaleY=".75"
+            app:srcCompat="@drawable/harrdbuttontext">
+
+        </ImageView>
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
