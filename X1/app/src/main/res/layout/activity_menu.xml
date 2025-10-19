@@ -9,8 +9,8 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="7dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
         android:id="@+id/btnSettings"
         android:clickable="true"
         android:src="@drawable/settingsbutton" />

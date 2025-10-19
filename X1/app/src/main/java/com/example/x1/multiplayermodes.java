@@ -11,7 +11,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class multiplayermodes extends AppCompatActivity {
+public class multiplayermodes extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

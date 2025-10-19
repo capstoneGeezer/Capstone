@@ -12,7 +12,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class lessonsdifficulty extends AppCompatActivity {
+public class lessonsdifficulty extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

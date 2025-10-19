@@ -12,7 +12,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class settings extends AppCompatActivity {
+public class settings extends BaseActivity {
 
     private Switch switchMusic, switchSoundEffects, switchVibrations, switchNotifications;
     private Spinner spinnerLanguage;

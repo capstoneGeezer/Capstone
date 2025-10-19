@@ -14,7 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.google.firebase.auth.FirebaseAuth;
 
-public class sign_in extends AppCompatActivity {
+public class sign_in extends BaseActivity {
 
     private FirebaseAuth auth;
     private EditText etUsername, etPassword;

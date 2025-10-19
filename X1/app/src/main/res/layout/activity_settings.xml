@@ -16,8 +16,8 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_alignParentLeft="true"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
             android:background="@android:color/transparent"
             android:contentDescription="Back"
             android:scaleType="fitXY"
@@ -30,9 +30,9 @@
             android:id="@+id/tvTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
             android:fontFamily="@font/itim"
             android:text="Settings"
             android:textColor="#000000"
@@ -40,16 +40,16 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@id/btnBack"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.422"
+            app:layout_constraintHorizontal_bias="0.385"
             app:layout_constraintStart_toEndOf="@id/btnBack"
             app:layout_constraintTop_toTopOf="@id/btnBack"
             app:layout_constraintVertical_bias="0.0" />
 
         <LinearLayout
             android:id="@+id/layoutMusic"
-            android:layout_width="390dp"
+            android:layout_width="360dp"
             android:layout_height="65dp"
-            android:layout_marginTop="90dp"
+            android:layout_marginTop="105dp"
             android:background="@drawable/settingsroundtext"
             android:backgroundTint="#FFFFFF"
             android:orientation="horizontal"
@@ -73,14 +73,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true"
-                android:scrollbarSize="4dp"
-                android:textSize="14sp" />
+                android:scrollbarSize="4dp" />
 
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/layoutSoundEffects"
-            android:layout_width="390dp"
+            android:layout_width="360dp"
             android:layout_height="65dp"
             android:background="@drawable/settingsroundtext"
             android:gravity="center_vertical"
@@ -96,7 +95,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="@font/coustard"
-                android:text="Sound Effects"
+                android:text="Sound"
                 android:textColor="#6B6B6B"
                 android:textSize="27sp" />
 
@@ -109,7 +108,7 @@
 
         <LinearLayout
             android:id="@+id/layoutVibrations"
-            android:layout_width="390dp"
+            android:layout_width="360dp"
             android:layout_height="65dp"
             android:layout_marginTop="45dp"
             android:background="@drawable/settingsroundtext"
@@ -139,7 +138,7 @@
 
         <LinearLayout
             android:id="@+id/layoutLanguage"
-            android:layout_width="390dp"
+            android:layout_width="360dp"
             android:layout_height="65dp"
             android:layout_marginTop="45dp"
             android:background="@drawable/settingsroundtext"
@@ -168,10 +167,10 @@
 
         <LinearLayout
             android:id="@+id/layoutNotifications"
-            android:layout_width="390dp"
+            android:layout_width="360dp"
             android:layout_height="65dp"
             android:layout_marginTop="44dp"
-            android:background="@drawable/roundtxtbox"
+            android:background="@drawable/settingsroundtext"
             android:gravity="center_vertical"
             android:orientation="horizontal"
             android:padding="10dp"
@@ -192,8 +191,37 @@
                 android:id="@+id/switchNotifications"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:checked="true" />
+                android:checked="true"/>
         </LinearLayout>
 
+        <LinearLayout
+            android:id="@+id/Sign_Out"
+            android:layout_width="280dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/signoutbutton"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutNotifications">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/orelega_one"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="Sign Out"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/sign_out_button"/>
+        </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

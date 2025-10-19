@@ -11,7 +11,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class training extends AppCompatActivity {
+public class training extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +25,7 @@ public class training extends AppCompatActivity {
             return insets;
         });
 
-        // 🔹 Top bar
+        // Top bar
         ImageButton btnReturn = findViewById(R.id.btnReturn);
         ImageButton btnSettings = findViewById(R.id.btnSettings);
 
@@ -37,7 +37,7 @@ public class training extends AppCompatActivity {
             startActivity(new Intent(training.this, settings.class));
         });
 
-        // 🔹 Practice buttons
+        // Practice buttons
         LinearLayout btnWritingPractice = findViewById(R.id.btnWritingPractice);
         LinearLayout btnRecognitionPractice = findViewById(R.id.btnRecognitionPractice);
 
@@ -49,7 +49,7 @@ public class training extends AppCompatActivity {
 //            startActivity(new Intent(training.this, recognition_practice.class));
         });
 
-        // 🔹 Bottom navigation
+        // Bottom navigation
         ImageButton navAchievements = findViewById(R.id.navAchievements);
         ImageButton navFriends = findViewById(R.id.navFriends);
         ImageButton navUserProfile = findViewById(R.id.navUserProfile);

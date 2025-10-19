@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="35dp"
         android:fontFamily="@font/itim"
         android:text="Sign in"
         android:textColor="#000000"
@@ -26,8 +26,8 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="7dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
         android:src="@drawable/settingsbutton" />
 
     <LinearLayout
@@ -54,7 +54,7 @@
             android:background="@drawable/roundtxtbox"
             android:backgroundTint="#FFC46B"
             android:fontFamily="@font/itim"
-            android:hint="Username"
+            android:hint="Username or Email"
             android:autofillHints="username"
             android:padding="10dp"
             android:textColorHint="#8B5E3C"

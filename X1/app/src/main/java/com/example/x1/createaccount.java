@@ -8,7 +8,6 @@ import android.widget.Toast;
 import android.widget.LinearLayout;
 
 import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -20,7 +19,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.HashMap;
 import java.util.Map;
 
-public class createaccount extends AppCompatActivity {
+public class createaccount extends BaseActivity {
 
     private FirebaseAuth auth;
     private FirebaseFirestore db;

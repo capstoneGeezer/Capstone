@@ -8,7 +8,7 @@
     <RelativeLayout
         android:id="@+id/topBar"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="70dp"
         android:background="#FDE8C4">
 
         <ImageButton
@@ -16,8 +16,8 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_alignParentLeft="true"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
             android:background="@android:color/transparent"
             android:contentDescription="Return"
             android:scaleType="centerInside"
@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="35dp"
             android:fontFamily="@font/itim"
             android:text="Leaderboards"
             android:textColor="#000000"
@@ -40,8 +40,8 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_alignParentRight="true"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="7dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
             android:src="@drawable/settingsbutton" />
     </RelativeLayout>
 

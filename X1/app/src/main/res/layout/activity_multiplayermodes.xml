@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="35dp"
         android:orientation="vertical"
         android:fontFamily="@font/itim"
         android:text="Select Mode"
@@ -30,8 +30,8 @@
         android:id="@+id/btnReturn"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
         android:background="@android:color/transparent"
         android:contentDescription="Return"
         android:scaleType="centerInside"
@@ -50,8 +50,8 @@
         android:src="@drawable/settingsbutton"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginEnd="5dp"
-        android:layout_marginTop="5dp" />
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp" />
 
     <LinearLayout
         android:id="@+id/btnShowdown"
@@ -63,7 +63,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="130dp" >
+        android:layout_marginTop="180dp" >
 
         <ImageView
             android:layout_width="370dp"
@@ -86,7 +86,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="330dp" >
+        android:layout_marginTop="380dp" >
 
         <ImageView
             android:layout_width="370dp"
@@ -109,7 +109,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="530dp" >
+        android:layout_marginTop="580dp" >
 
         <ImageView
             android:layout_width="370dp"
@@ -121,4 +121,6 @@
 
         </ImageView>
     </LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

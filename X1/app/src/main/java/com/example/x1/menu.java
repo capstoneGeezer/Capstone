@@ -8,12 +8,11 @@ import android.widget.Toast;
 import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class menu extends AppCompatActivity {
+public class menu extends BaseActivity {
 
     // Top menu buttons
     private LinearLayout btnPlay, btnMultiplayer, btnPractice;
@@ -54,7 +53,6 @@ public class menu extends AppCompatActivity {
         btnSettings = findViewById(R.id.btnSettings);
 
         btnSettings.setOnClickListener(v -> {
-            Toast.makeText(this, "Play clicked", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(menu.this, settings.class);
             startActivity(intent);
         });
@@ -62,7 +60,6 @@ public class menu extends AppCompatActivity {
         // --- Top Buttons ---
         if (btnPlay != null) {
             btnPlay.setOnClickListener(v -> {
-                Toast.makeText(this, "Play clicked", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(menu.this, lessonsdifficulty.class);
                 startActivity(intent);
             });
@@ -70,7 +67,6 @@ public class menu extends AppCompatActivity {
 
         if (btnMultiplayer != null) {
             btnMultiplayer.setOnClickListener(v -> {
-                Toast.makeText(this, "Multiplayer clicked", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(menu.this, multiplayermodes.class);
                 startActivity(intent);
             });
@@ -78,28 +74,29 @@ public class menu extends AppCompatActivity {
 
         if (btnPractice != null) {
             btnPractice.setOnClickListener(v -> {
-                Toast.makeText(this, "Practice clicked", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(menu.this, training.class);
                 startActivity(intent);
             });
         }
 
         // --- Bottom Navigation ---
-        navAchievements.setOnClickListener(v ->
-                Toast.makeText(this, "Achievements", Toast.LENGTH_SHORT).show());
+        navAchievements.setOnClickListener(v -> {
+        });
 
-        navFriends.setOnClickListener(v ->
-                Toast.makeText(this, "Friends", Toast.LENGTH_SHORT).show());
+        navFriends.setOnClickListener(v -> {
+        });
 
-        navUserProfile.setOnClickListener(v ->
-                Toast.makeText(this, "User Profile", Toast.LENGTH_SHORT).show());
+        navUserProfile.setOnClickListener(v -> {
+        });
 
-        navDictionary.setOnClickListener(v ->
-                Toast.makeText(this, "Dictionary", Toast.LENGTH_SHORT).show());
+        navDictionary.setOnClickListener(v -> {
+        });
 
         navQuit.setOnClickListener(v -> {
-            Toast.makeText(this, "Goodbye!", Toast.LENGTH_SHORT).show();
-            finishAffinity(); // Closes the app
+        });
+
+        navQuit.setOnClickListener(v -> {
+            finishAffinity();
         });
     }
 }
