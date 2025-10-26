@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/easymodule1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE6C6"
+    tools:context=".easylesson1">
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#FDE8C4">
+
+        <ImageButton
+            android:id="@+id/btnReturn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Return"
+            android:scaleType="centerInside"
+            android:src="@drawable/return_button" />
+
+        <TextView
+            android:id="@+id/Lessons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/itim"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/settingsbutton" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lessonsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="750dp"
+        android:layout_below="@id/topBar"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:orientation="vertical"
+        android:background="@drawable/lessoncontainer"
+        android:padding="16dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:scrollbarSize="10dp"
+            android:scrollbarTrackVertical="@drawable/trackscrollbarlessons"
+            android:scrollbarThumbVertical="@drawable/thumbscrollbarlessons"
+            android:fadeScrollbars="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:dividerHeight="8dp"
+                android:paddingEnd="10dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Nature of the Script"
+                    android:fontFamily="@font/itim"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="4dp"
+                    android:fontFamily="@font/itim"
+                    android:text="• Each Baybayin character represents a syllable (example: ᜊ = 'ba', not just 'b')."
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:justificationMode="inter_word"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/itim"
+                    android:text="Baybayin has 17 basic characters: \n
+    • 3 vowels: ᜀ (a), ᜁ (i/e), ᜂ (o/u) \n
+    • 14 consonants, each carrying the default vowel 'a' (like ba, ka, la, ma)."
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:justificationMode="inter_word"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="4dp"
+                    android:fontFamily="@font/itim"
+                    android:text="Materials and Writing Style"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="155dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/itim"
+                    android:text="• The characters are curved or flowing, making them easier to carve into bamboo, wood, or palm leaves.\n
+• Early Filipinos used knives, heated metal, or sharp tools to inscribe the script.\n
+• Baybayin was often written in continuous flow without spaces, unlike modern writing."
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:justificationMode="inter_word" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="4dp"
+                    android:fontFamily="@font/itim"
+                    android:text="Historical Context"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="155dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/itim"
+                    android:text="During the 1500s, when the Spanish arrived, they were surprised to find that many native Filipinos could read and write using Baybayin. While in some countries literacy was limited to the elite, Baybayin was used by common people for poetry, personal letters, and songs."
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:justificationMode="inter_word"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="4dp"
+                    android:fontFamily="@font/itim"
+                    android:text="Cultural Notes"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="155dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/itim"
+                    android:text="Baybayin is more than just a writing system—it is proof that the Philippines had its own form of literacy and culture before colonization. Understanding Baybayin helps Filipinos reconnect with indigenous identity and heritage."
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:justificationMode="inter_word"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

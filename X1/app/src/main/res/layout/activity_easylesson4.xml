@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/easymodule4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE6C6"
+    tools:context=".easylesson4">
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#FDE8C4">
+
+        <ImageButton
+            android:id="@+id/btnReturn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Return"
+            android:scaleType="centerInside"
+            android:src="@drawable/return_button" />
+
+        <TextView
+            android:id="@+id/Lessons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/itim"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/settingsbutton" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lessonsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="750dp"
+        android:layout_below="@id/topBar"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:orientation="vertical"
+        android:background="@drawable/lessoncontainer"
+        android:padding="16dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:scrollbarSize="10dp"
+            android:scrollbarTrackVertical="@drawable/trackscrollbarlessons"
+            android:scrollbarThumbVertical="@drawable/thumbscrollbarlessons"
+            android:fadeScrollbars="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:dividerHeight="8dp"
+                android:paddingEnd="10dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Decline Under Colonization"
+                    android:fontFamily="@font/itim"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/itim"
+                    android:text="• Early Spanish missionaries printed religious materials using Baybayin to communicate with locals.\n
+• As colonial influence deepened, they promoted the Latin alphabet because it aligned better with Spanish phonetics and administrative systems.\n
+• Schools and government offices replaced Baybayin with the Latin script for standardization.\n
+• Over time, writing in Baybayin became rare, and by the late 1700s, its everyday use had largely disappeared."
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:justificationMode="inter_word"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Survival of Related Scripts"
+                    android:fontFamily="@font/itim"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="175dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/itim"
+                    android:text="• While Baybayin use declined among lowland Tagalog communities, related indigenous scripts like Hanunuo and Buhid (Mindoro), and Tagbanwa (Palawan) continued to be used.\n
+• These scripts preserved pre-colonial writing traditions and are still written today as part of cultural heritage practices."
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:justificationMode="inter_word"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Modern Revival"
+                    android:fontFamily="@font/itim"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="175dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/itim"
+                    android:text="• In the 20th century, scholars, artists, and cultural advocates began reintroducing Baybayin through research, literature, and design.\n
+• Baybayin now appears in tattoos, apparel, public murals, tourism branding, and creative media.\n
+• Digital tools such as Unicode integration, mobile keyboards, and web fonts have made it usable in modern communication.\n
+• Recent cultural policy efforts, such as the proposed National Writing System Act (House Bill 1022), highlight a move to include Baybayin in public symbols and education."
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:justificationMode="inter_word"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Cultural Notes"
+                    android:fontFamily="@font/itim"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/itim"
+                    android:text="The revival of Baybayin is not simply about learning a historical script. It represents a conscious effort by Filipinos to reclaim pre-colonial identity, challenge historical erasure, and reconnect with cultural roots in a modern setting. The script’s revival turns it into a living symbol — not just of writing, but of cultural pride and resilience."
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:justificationMode="inter_word"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

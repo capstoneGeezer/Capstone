@@ -12,6 +12,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.X1">
         <activity
+            android:name=".easylesson4"
+            android:exported="false" />
+        <activity
+            android:name=".easylesson3"
+            android:exported="false" />
+        <activity
+            android:name=".easylesson2"
+            android:exported="false" />
+        <activity
+            android:name=".hardlessonlist"
+            android:exported="false" />
+        <activity
+            android:name=".mediumlessonlist"
+            android:exported="false" />
+        <activity
+            android:name=".easylesson1"
+            android:exported="false" />
+        <activity
+            android:name=".drawingboard"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
             android:name=".sign_in"
             android:exported="false" />
         <activity
@@ -41,10 +63,6 @@
         <activity
             android:name=".leaderboard"
             android:exported="false" />
-        <activity
-            android:name=".drawingboard"
-            android:exported="false"
-            android:screenOrientation="landscape" />
         <activity
             android:name=".appMenu"
             android:exported="false" />

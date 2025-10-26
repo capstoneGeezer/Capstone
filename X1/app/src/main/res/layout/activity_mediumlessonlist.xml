@@ -2,11 +2,11 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/easylessonpicker"
+    android:id="@+id/mediumlessonpicker"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFE6C6"
-    tools:context=".easylessonlist">
+    tools:context=".mediumlessonlist">
 
     <RelativeLayout
         android:id="@+id/topBar"
@@ -77,47 +77,47 @@
                 android:dividerHeight="8dp"
                 android:paddingEnd="10dp">
 
-            <LinearLayout
-                android:id="@+id/btnlesson1"
-                android:layout_width="match_parent"
-                android:layout_height="130dp"
-                android:layout_marginHorizontal="10dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/lessonsbuttoncorner"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?attr/selectableItemBackground"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:padding="10dp">
+                <LinearLayout
+                    android:id="@+id/btnlesson1"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/lessonsbuttoncorner"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
 
-                <ImageView
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:contentDescription="@string/easysvg1"
-                    android:src="@drawable/baybayin_a" />
-
-
-                <View
-                    android:layout_width="4dp"
-                    android:layout_height="90dp"
-                    android:background="#A94400"
-                    android:layout_marginEnd="20dp" />
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:contentDescription="@string/mediumsvg1"
+                        android:src="@drawable/baybayin_e_i" />
 
 
-                <TextView
-                    android:id="@+id/easy1Text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/philosopher_bold"
-                    android:text="What is Baybayin?"
-                    android:textColor="#000000"
-                    android:textSize="20sp" />
+                    <View
+                        android:layout_width="4dp"
+                        android:layout_height="90dp"
+                        android:background="#A94400"
+                        android:layout_marginEnd="20dp" />
 
-            </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/easy1Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/philosopher_bold"
+                        android:text="The Vowels of Baybayin"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/btnlesson2"
@@ -139,8 +139,8 @@
                         android:layout_height="70dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
-                        android:contentDescription="@string/easysvg2"
-                        android:src="@drawable/baybayin_b" />
+                        android:contentDescription="@string/mediumsvg2"
+                        android:src="@drawable/baybayin_g" />
 
 
                     <View
@@ -155,7 +155,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/philosopher_bold"
-                        android:text="Where Did Baybayin Come From?"
+                        android:text="The Consonants of Baybayin"
                         android:textColor="#000000"
                         android:textSize="20sp" />
 
@@ -182,8 +182,8 @@
                         android:layout_height="70dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
-                        android:contentDescription="@string/easysvg3"
-                        android:src="@drawable/baybayin_c" />
+                        android:contentDescription="@string/mediumsvg3"
+                        android:src="@drawable/baybayin_h" />
 
 
                     <View
@@ -198,7 +198,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/philosopher_bold"
-                        android:text="How Was Baybayin Used In Daily Life?"
+                        android:text="Baybayin Markers"
                         android:textColor="#000000"
                         android:textSize="20sp" />
 
@@ -225,8 +225,8 @@
                         android:layout_height="70dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
-                        android:contentDescription="@string/easysvg4"
-                        android:src="@drawable/baybayin_d" />
+                        android:contentDescription="@string/mediumsvg4"
+                        android:src="@drawable/baybayin_j" />
 
 
                     <View
@@ -241,7 +241,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/philosopher_bold"
-                        android:text="From Decline to Rediscovery"
+                        android:text="Reading and Understanding"
                         android:textColor="#000000"
                         android:textSize="20sp" />
 

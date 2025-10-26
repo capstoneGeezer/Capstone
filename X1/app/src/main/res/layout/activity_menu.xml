@@ -115,7 +115,7 @@
             android:layout_width="200dp"
             android:layout_height="60dp"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="5dp"
             android:background="@drawable/practicebuttoncorner"
             android:clickable="true"
             android:focusable="true"
@@ -136,6 +136,28 @@
 
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="235dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/leaderboardbuttoncorner"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_leaderboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/orelega_one"
+                android:gravity="center"
+                android:text="Leaderboard"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout

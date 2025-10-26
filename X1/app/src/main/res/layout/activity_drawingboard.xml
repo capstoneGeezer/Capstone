@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawingboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE6C6"
+    tools:context=".drawingboard">
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/back_button"
+        android:scaleType="fitXY"
+        android:src="@drawable/return_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/btnSettings"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/settings_button"
+        android:scaleType="fitXY"
+        android:src="@drawable/settingsbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <FrameLayout
+        android:id="@+id/wordGuideContainer"
+        android:layout_width="550dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/wordcontainer"
+        app:layout_constraintBottom_toTopOf="@+id/drawingBoardContainer"
+        app:layout_constraintStart_toStartOf="@+id/drawingBoardContainer"
+        app:layout_constraintEnd_toEndOf="@+id/drawingBoardContainer"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+
+
+    <FrameLayout
+        android:id="@+id/drawingBoardContainer"
+        android:layout_width="750dp"
+        android:layout_height="290dp"
+        android:background="@drawable/boardbackground"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnBack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sideButtonsContainer"
+        app:layout_constraintWidth_percent="0.7"
+        app:layout_constraintHeight_percent="0.8">
+
+        <LinearLayout
+            android:id="@+id/confirmButton"
+            android:layout_width="160dp"
+            android:layout_height="35dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#009514"
+            android:background="@drawable/confirmbutton"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/confirmText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirm"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:fontFamily="@font/orelega_one"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/sideButtonsContainer"
+        android:layout_width="67dp"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <ImageButton
+            android:id="@+id/btnRedo"
+            android:layout_width="67dp"
+            android:layout_height="65dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/redo_button"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/eraser_tool"/>
+
+        <ImageButton
+            android:id="@+id/btnDelete"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/delete_button"
+            android:contentDescription="@string/clear_board"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

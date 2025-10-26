@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/easymodule3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE6C6"
+    tools:context=".easylesson3">
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#FDE8C4">
+
+        <ImageButton
+            android:id="@+id/btnReturn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Return"
+            android:scaleType="centerInside"
+            android:src="@drawable/return_button" />
+
+        <TextView
+            android:id="@+id/Lessons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/itim"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/settingsbutton" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lessonsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="750dp"
+        android:layout_below="@id/topBar"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:orientation="vertical"
+        android:background="@drawable/lessoncontainer"
+        android:padding="16dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:scrollbarSize="10dp"
+            android:scrollbarTrackVertical="@drawable/trackscrollbarlessons"
+            android:scrollbarThumbVertical="@drawable/thumbscrollbarlessons"
+            android:fadeScrollbars="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:dividerHeight="8dp"
+                android:paddingEnd="10dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Writing Materials and Tools"
+                    android:fontFamily="@font/itim"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/itim"
+                    android:text="• Common writing “paper”: bamboo segments (tubes or slats), palm leaves, and sometimes tree bark or wooden slabs.\n
+• Tools: sharp knives, bone or metal styluses, and heated implements used to scratch, carve, or burn characters; ink from soot or plant extracts was sometimes applied to make marks more visible.\n• These material practices are described in museum displays and ethnographic summaries of traditional scripts."
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:justificationMode="inter_word"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Everyday Uses of Baybayin"
+                    android:fontFamily="@font/itim"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/itim"
+                    android:text="• Literature and Oral Tradition: Short poetic forms and oral verses were transcribed; Baybayin sometimes served to record lines of songs, chants, or short poems.\n
+• Personal Communication: People wrote messages and letters between households—simple private correspondence was a common use.\n
+• Community and Economic Life: Traders and community members used writing to note agreements, debts, or memoranda of transactions.\n
+• Ritual and Names: Short ritual texts, proper names, and formulaic inscriptions appear in the museum’s collections and archival examples."
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:justificationMode="inter_word"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Accounts from Early Visitors"
+                    android:fontFamily="@font/itim"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/itim"
+                    android:text="Several early European observers recorded that many inhabitants could read and write using local scripts — including Baybayin — and that reading/writing was not strictly limited to male elites. While individual chroniclers vary in wording, the archaeological and archival evidence corroborated in museum collections supports the conclusion that writing was reasonably widespread in certain areas."
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:justificationMode="inter_word"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Limitations of the Script"
+                    android:fontFamily="@font/itim"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="325dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/itim"
+                    android:text="• Traditional Baybayin scripts do not mark final consonants; a syllabic character normally carries an inherent “a” vowel unless modified by a diacritic. Because of this, words with final consonants could look ambiguous on the page (for example, bundok might appear without the final “k” unless later conventions are used).\n
+• Later adaptations and modern teaching often use the pamudpod/virama or other reformed marks to represent final consonants; those marks are not universal across historical documents, so you will see variation between sources and modern practice."
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:justificationMode="inter_word"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Cultural Notes"
+                    android:fontFamily="@font/itim"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/itim"
+                    android:text="Baybayin’s presence in ordinary life indicates a tradition of written communication that complemented oral culture. Because writing was used for personal, commercial, and ritual purposes, it offers evidence of social complexity and literacy practices in pre-colonial communities that were later documented and preserved in museum collections and archives."
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:justificationMode="inter_word"/>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>
